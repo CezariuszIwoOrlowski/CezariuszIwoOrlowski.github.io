@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CezariuszIwoOrlowski - GitHub | Data Analyst → Aspiring Security Data
+      Analyst · Tableau · SQL · Warsaw
+    </title>
+    <meta
+      name="description"
+      content="Cezariusz Iwo Orłowski - Data Analyst and Tableau Developer transitioning into Security Data Analytics. Specializing in healthcare BI. Based in Warsaw, Poland."
+    />
+    <meta
+      name="keywords"
+      content="Cezariusz Iwo Orłowski - Data Analyst, Tableau Developer, Aspiring Security Data Analyst, Healthcare Analytics, SQL, SIEM, Threat Intelligence, Log Analysis, Linux, CompTIA Security+, Business Intelligence, Warsaw, Poland, Freelance Dashboard"
+    />
+    <meta name="author" content="Cezariusz Iwo Orłowski" />
+    <meta
+      property="og:title"
+      content="Cezariusz Iwo Orłowski | Data Analyst · Aspiring Security Data Analyst"
+    />
+    <meta
+      property="og:description"
+      content="Cezariusz Iwo Orłowski - Data Analyst and Tableau Developer transitioning into Security Data Analytics — SIEM, Threat Intelligence, Log Analysis, Linux."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://github.com/CezariuszIwoOrlowski/CezariuszIwoOrlowski">
+    
+<meta http-equiv="Content-Security-Policy"
+  content="
+    default-src 'none';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self' data:;
+    connect-src 'none';
+    frame-ancestors 'none';
+    base-uri 'self';
+    form-action 'none';
+  ">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Permissions-Policy"
+  content="camera=(), microphone=(), geolocation=(), payment=()">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+  rel="stylesheet"
+  crossorigin="anonymous">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ceezariusz Iwo Orlowski",
+  "url": "https://CezariuszIwoOrlowski.github.io",
+  "jobTitle": "Data Analyst & Aspiring Security Data Analyst",
+  "description": "Data Analyst and Tableau Developer transitioning into Security Data Analytics. Specializing in healthcare BI, SQL, T-SQL, SIEM, and Threat Intelligence.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Warsaw",
+    "addressCountry": "PL"
+  },
+  "sameAs": [
+    "https://github.com/TWOJ-USERNAME",
+    "https://linkedin.com/in/TWOJ-HANDLE",
+    "https://instagram.com/TWOJ_NICK"
+  ],
+  "knowsAbout": [
+    "Data Analysis",
+    "Tableau",
+    "SQL",
+    "T-SQL",
+    "Power BI",
+    "Healthcare Analytics",
+    "Security Data Analytics",
+    "SIEM",
+    "Log Analysis",
+    "Threat Intelligence",
+    "Linux",
+    "Business Intelligence",
+    "Financial Reporting",
+    "ERP Analytics"
+  ],
+  "knowsLanguage": ["pl", "en"],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Public Healthcare — Warsaw"
+  }
+}
+</script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --bg: #080c10;
+        --bg2: #0d1117;
+        --bg3: #111820;
+        --border: #1e2d3d;
+        --border2: #263545;
+        --accent: #00c896;
+        --accent2: #0099ff;
+        --text: #cdd9e5;
+        --text2: #8b949e;
+        --text3: #4d5b69;
+        --heading: #e6edf3;
+        --tag-bg: #112030;
+        --tag-text: #58a6ff;
+        --mono: "IBM Plex Mono", monospace;
+        --sans: "IBM Plex Sans", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--sans);
+        font-size: 15px;
+        line-height: 1.7;
+        min-height: 100vh;
+      }
+
+      ::selection {
+        background: #00c89630;
+        color: var(--heading);
+      }
+
+      /* ── LAYOUT ── */
+      .container {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ── SCANLINE HEADER ── */
+      header {
+        border-bottom: 1px solid var(--border);
+        padding: 60px 0 48px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(0, 200, 150, 0.012) 2px,
+          rgba(0, 200, 150, 0.012) 4px
+        );
+        pointer-events: none;
+      }
+
+      .header-inner {
+        position: relative;
+      }
+
+      .prompt {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .prompt::before {
+        content: "▶";
+        font-size: 9px;
+        animation: blink 1.2s step-end infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      h1 {
+        font-family: var(--mono);
+        font-size: clamp(28px, 5vw, 44px);
+        font-weight: 600;
+        color: var(--heading);
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin-bottom: 12px;
+      }
+
+      .tagline {
+        font-family: var(--mono);
+        font-size: 13px;
+        color: var(--text2);
+        letter-spacing: 0.04em;
+        margin-bottom: 28px;
+      }
+
+      .tagline span {
+        color: var(--accent2);
+      }
+
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--text2);
+      }
+
+      .contact-row a {
+        color: var(--text2);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: color 0.15s;
+      }
+
+      .contact-row a:hover {
+        color: var(--accent);
+      }
+
+      .dot {
+        color: var(--border2);
+      }
+
+      /* ── SECTIONS ── */
+      section {
+        padding: 44px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      section:last-child {
+        border-bottom: none;
+      }
+
+      .section-label {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        color: var(--accent);
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .section-label::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--border);
+      }
+
+      h2 {
+        font-family: var(--mono);
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--heading);
+      }
+
+      /* ── ABOUT ── */
+      .about-text {
+        font-size: 15px;
+        color: var(--text);
+        line-height: 1.8;
+        max-width: 660px;
+      }
+
+      .about-text strong {
+        color: var(--heading);
+        font-weight: 500;
+      }
+
+      /* ── STACK GRID ── */
+      .stack-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+      }
+
+      .stack-cell {
+        background: var(--bg2);
+        padding: 16px 20px;
+        transition: background 0.15s;
+      }
+
+      .stack-cell:hover {
+        background: var(--bg3);
+      }
+
+      .stack-area {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        color: var(--text3);
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+
+      .stack-items {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .stack-item {
+        font-family: var(--mono);
+        font-size: 13px;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .stack-item::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--accent);
+        flex-shrink: 0;
+      }
+
+      .stack-item.learning {
+        color: var(--text2);
+      }
+      .stack-item.learning::before {
+        background: var(--accent2);
+      }
+
+      /* ── EXPERIENCE ── */
+      .exp-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .exp-item {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0 24px;
+      }
+
+      .exp-role {
+        font-family: var(--mono);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--heading);
+        margin-bottom: 2px;
+      }
+
+      .exp-company {
+        font-size: 13px;
+        color: var(--accent2);
+        margin-bottom: 8px;
+      }
+
+      .exp-period {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--text3);
+        text-align: right;
+        white-space: nowrap;
+        padding-top: 2px;
+      }
+
+      .exp-desc {
+        font-size: 14px;
+        color: var(--text2);
+        line-height: 1.7;
+        grid-column: 1 / -1;
+        margin-top: 8px;
+      }
+
+      .exp-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 10px;
+        grid-column: 1 / -1;
+      }
+
+      .tag {
+        font-family: var(--mono);
+        font-size: 11px;
+        background: var(--tag-bg);
+        color: var(--tag-text);
+        padding: 3px 10px;
+        border: 1px solid #1e3a5f;
+      }
+
+      .tag.sec {
+        background: #0d1f12;
+        color: #3fb950;
+        border-color: #1a3d22;
+      }
+      .tag.neutral {
+        background: #1a1f25;
+        color: var(--text2);
+        border-color: var(--border);
+      }
+
+      /* ── SKILLS BAR ── */
+      .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .skill-row {
+        display: grid;
+        grid-template-columns: 160px 1fr 36px;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .skill-name {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--text2);
+      }
+
+      .skill-bar {
+        height: 3px;
+        background: var(--border);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .skill-fill {
+        height: 100%;
+        background: var(--accent);
+        transform-origin: left;
+        animation: fillBar 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        transform: scaleX(0);
+      }
+
+      .skill-fill.blue {
+        background: var(--accent2);
+      }
+
+      @keyframes fillBar {
+        to {
+          transform: scaleX(1);
+        }
+      }
+
+      .skill-pct {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--text3);
+        text-align: right;
+      }
+
+      /* ── FOCUS ── */
+      .focus-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 12px;
+      }
+
+      .focus-card {
+        border: 1px solid var(--border);
+        background: var(--bg2);
+        padding: 20px 18px;
+        transition:
+          border-color 0.15s,
+          background 0.15s;
+        cursor: default;
+      }
+
+      .focus-card:hover {
+        border-color: var(--border2);
+        background: var(--bg3);
+      }
+
+      .focus-icon {
+        font-family: var(--mono);
+        font-size: 18px;
+        color: var(--accent);
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+
+      .focus-title {
+        font-family: var(--mono);
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--heading);
+        margin-bottom: 4px;
+      }
+
+      .focus-sub {
+        font-size: 12px;
+        color: var(--text2);
+        line-height: 1.5;
+      }
+
+      /* ── FOOTER ── */
+      footer {
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .footer-left {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--text3);
+      }
+
+      .footer-right {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--text3);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .status-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.5;
+          transform: scale(0.8);
+        }
+      }
+
+      /* ── FADE IN ── */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(12px);
+        transition:
+          opacity 0.5s ease,
+          transform 0.5s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 560px) {
+        .exp-item {
+          grid-template-columns: 1fr;
+        }
+        .exp-period {
+          text-align: left;
+        }
+        .skill-row {
+          grid-template-columns: 120px 1fr 32px;
+        }
+        footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+    <meta name="google-site-verification" content="gk3QsBEx5cOWvhSU6AME40KAZTiUARPLk97dS4PquDQ" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <div class="header-inner">
+          <div class="prompt">
+            CezariuiszIwoOrlowski.github.io · data-analyst → security · bi ·
+            warsaw
+          </div>
+          <h1>
+            Data Analyst<br /><span style="color: var(--accent2)">→</span>
+            Security Data Analyst
+          </h1>
+          <p class="tagline">
+            <span>SQL</span> ·
+            <span>Tableau & Power BI</span> · <span>Web Development</span> ·
+            Healthcare BI · Aspiring Threat Intelligence · Warsaw, PL
+          </p>
+          <div class="contact-row">
+            <a
+              href="https://github.com/CezariuszIwoOrlowski"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+              GitHub
+            </a>
+            <span class="dot">·</span>
+            <a
+              href="https://www.linkedin.com/in/cezariusz-iwo-orlowski/"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+<!--Instagram -->
+        <span class="dot">·</span>
+        <a href="https://instagram.com/cezariusz_iwo_orlowski" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          Instagram
+        </a>
+<!--Instagram-->
+            
+            <span class="dot">·</span>
+            <span>Warsaw, Poland</span>
+            <span class="dot">·</span>
+            <span>Open to freelance</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ABOUT -->
+      <section class="fade-in">
+        <div class="section-label">profile</div>
+        <p class="about-text">
+          Data Analyst and Tableau Developer with hands-on experience in
+          <strong>financial reporting</strong>,
+          <strong>healthcare analytics</strong>, and
+          <strong>business intelligence</strong>. Currently working as an
+          Accountant in public healthcare — building expertise in
+          <strong>ERP systems</strong>, financial data modeling. Transitioning
+          into <strong>Security Data Analytics</strong> — developing skills in
+          log analysis, SIEM tooling, Linux, and threat intelligence
+          fundamentals.
+        </p>
+      </section>
+
+      <!-- TECH STACK -->
+      <section class="fade-in">
+        <div class="section-label">tech stack</div>
+        <div class="stack-grid">
+          <div class="stack-cell">
+            <div class="stack-area">BI &amp; Visualization</div>
+            <div class="stack-items">
+              <div class="stack-item">Tableau Desktop</div>
+              <div class="stack-item">Tableau Prep</div>
+              <div class="stack-item">Power BI</div>
+              <div class="stack-item">Alteryx</div>
+            </div>
+          </div>
+          <div class="stack-cell">
+            <div class="stack-area">Query &amp; Data</div>
+            <div class="stack-items">
+              <div class="stack-item">T-SQL / MS SQL Server</div>
+              <div class="stack-item">SQL Server Integration Services (SSIS)</div>
+              <div class="stack-item">ERP Data Modeling</div>
+              <div class="stack-item">Excel / Power Query / VBA</div>
+            </div>
+          </div>
+          <div class="stack-cell">
+            <div class="stack-area">Learning · in progress</div>
+            <div class="stack-items">
+              <div class="stack-item learning">Linux CLI</div>
+              <div class="stack-item learning">Bash scripting basics</div>
+              <div class="stack-item learning">System administration & Python</div>
+            </div>
+          </div>
+          <div class="stack-cell">
+            <div class="stack-area">Security Track · in progress</div>
+            <div class="stack-items">
+              <div class="stack-item learning">Security Data Analytics</div>
+              <div class="stack-item learning">Log Analysis / SIEM</div>
+              <div class="stack-item learning">Threat Intelligence</div>
+              <div class="stack-item learning">CompTIA Security+</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="fade-in">
+        <div class="section-label">proficiency</div>
+        <div class="skills-list">
+          <div class="skill-row">
+            <span class="skill-name">Tableau</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill"
+                style="width: 97%; animation-delay: 0s"
+              ></div>
+            </div>
+            <span class="skill-pct">97%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Data Visualization</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill"
+                style="width: 92%; animation-delay: 0.05s"
+              ></div>
+            </div>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">T-SQL</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill"
+                style="width: 60%; animation-delay: 0.1s"
+              ></div>
+            </div>
+            <span class="skill-pct">60%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Financial Reporting</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill"
+                style="width: 78%; animation-delay: 0.15s"
+              ></div>
+            </div>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Power BI</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill"
+                style="width: 50%; animation-delay: 0.18s"
+              ></div>
+            </div>
+            <span class="skill-pct">50%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Healthcare Analytics</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill"
+                style="width: 70%; animation-delay: 0.22s"
+              ></div>
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Linux · learning</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill blue"
+                style="width: 2%; animation-delay: 0.28s"
+              ></div>
+            </div>
+            <span class="skill-pct">2%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Sec. Analytics · learning</span>
+            <div class="skill-bar">
+              <div
+                class="skill-fill blue"
+                style="width: 3%; animation-delay: 0.33s"
+              ></div>
+            </div>
+            <span class="skill-pct">3%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="fade-in">
+        <div class="section-label">experience</div>
+        <div class="exp-list">
+          <div class="exp-item">
+            <div class="exp-role">Accountant · Data Analyst</div>
+            <div class="exp-period">2026 — present</div>
+            <div class="exp-company">Public Healthcare — Warsaw</div>
+            <div class="exp-desc">
+              Financial data analysis and ERP reporting in public healthcare
+              sector. Deepening domain knowledge in healthcare operations,
+              accounting systems, and institutional data flows.
+            </div>
+            <div class="exp-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Accounting</span>
+              <span class="tag">ERP Analytics</span>
+              <span class="tag">Healthcare BI</span>
+              <span class="tag">Financial Reporting</span>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-role">Junior Data Analyst · Tableau Developer</div>
+            <div class="exp-period">2024 — 2026</div>
+            <div class="exp-company">Baxter International Inc. — Warsaw</div>
+            <div class="exp-desc">
+              Developed and maintained Tableau dashboards for business
+              performance monitoring in pharmaceutical corporate environment.
+              Built data pipelines with Tableau Prep and Alteryx. Delivered KPI
+              dashboards for operational and executive reporting.
+            </div>
+            <div class="exp-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">Tableau Prep</span>
+              <span class="tag">Alteryx</span>
+              <span class="tag">T-SQL</span>
+              <span class="tag">Pharma Analytics</span>
+              <span class="tag">Dashboard Design</span>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-role">Intern — Commercial Analytics Specialist</div>
+            <div class="exp-period">2023 — 2024</div>
+            <div class="exp-company">Baxter International Inc. — Warsaw</div>
+            <div class="exp-desc">
+              Entry-level exposure to business intelligence, data extraction,
+              and visualization workflows. Foundation for analytical methodology
+              and structured reporting processes.
+            </div>
+            <div class="exp-tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Power Query</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">Reporting</span>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-role">Freelance — Dashboard Consulting</div>
+            <div class="exp-period">ongoing</div>
+            <div class="exp-company">Independent</div>
+            <div class="exp-desc">
+              Freelance Tableau dashboard development for clients requiring
+              financial and operational data visualization. Specialize in clean,
+              decision-ready BI tools built for non-technical stakeholders.
+            </div>
+            <div class="exp-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">Dashboard Design</span>
+              <span class="tag">Data Consulting</span>
+              <span class="tag neutral">Remote</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURRENT FOCUS -->
+      <section class="fade-in">
+        <div class="section-label">current focus</div>
+        <div class="focus-grid">
+          <div class="focus-card">
+            <div class="focus-icon">//</div>
+            <div class="focus-title">T-SQL Optimization</div>
+            <div class="focus-sub">
+              Stored procedures, query performance, indexing strategies
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon">$_</div>
+            <div class="focus-title">Linux · in progress</div>
+            <div class="focus-sub">
+              CLI, Bash basics, system administration fundamentals
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon">⚑</div>
+            <div class="focus-title">Security Analytics · in progress</div>
+            <div class="focus-sub">
+              SIEM, log analysis, anomaly detection — CompTIA Security+ path
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon">◈</div>
+            <div class="focus-title">Threat Intelligence · in progress</div>
+            <div class="focus-sub">
+              Data-driven adversary profiling, threat data fundamentals
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon">▦</div>
+            <div class="focus-title">Freelance BI</div>
+            <div class="focus-sub">
+              Tableau dashboard consulting, scalable analytics tools
+            </div>
+          </div>
+          <div class="focus-card">
+            <div class="focus-icon">◉</div>
+            <div class="focus-title">Physical Performance</div>
+            <div class="focus-sub">
+              Weighted calisthenics, 5×/week — systems-based approach
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="fade-in">
+        <div class="footer-left">
+          Cezariusz Iwo Orłowski · Warsaw, Poland · Data Analyst
+          <span style="color: var(--accent2)">→</span> Security Analytics
+        </div>
+        <div class="footer-right">
+          <span class="status-dot"></span>
+          open to freelance
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
